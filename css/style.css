@@ -1,0 +1,102 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #020307;
+  color: #fff;
+}
+
+header.shadow {
+  box-shadow: -1px 4px 20px 1px red  !important;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.nav-link{
+    position: relative;
+    padding: 10px;
+}
+.nav-link:hover{
+    color: #ffffff;
+}
+.nav-link::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: width 0.5s;
+}
+.nav-link:hover::before {
+  width: 100%;
+}
+.nav-link.active::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: width 0.5s;
+}
+.btn-danger {
+  background-color: #ff2c1f;
+  border: none;
+}
+.btn-danger:hover {
+  background: #fa1216;
+}
+
+.home{
+  /* background: url('../img/home3.jpg') cover center no-repeat; */
+  background-image: url('../img/home3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  padding-top: 80px;
+  
+}
+.btn-home{
+  display: flex;
+  align-items: center;
+  display: block;
+}
+
+
+
+
+
+.textHover {
+  color: #ffff;
+  transition: color 0.3s ease-in-out;
+}
+
+.textHover:hover {
+  color: #ff2c1f;
+}
+
+
+.card{
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-img-top {
+  height: 270px;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  /* color: #ff2c1f; */
+}
+.card-text {
+  font-size: 0.9rem;
+  color: #ddd;
+}
